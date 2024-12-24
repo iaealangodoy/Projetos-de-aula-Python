@@ -5,21 +5,22 @@ numero_2 = input('Digite o segundo número: ')
 float_numero_1 = float(numero_1)
 float_numero_2 = float(numero_2)
 
+calculo_adicao = float_numero_1 + float_numero_2
+calculo_subtracao = float_numero_1 - float_numero_2
+calculo_multiplicacao = float_numero_1 * float_numero_2
+calculo_divisao = float_numero_1 / float_numero_2
+
 if multiplicador == '+':
-    adicao = float_numero_1 + float_numero_2
-    print(f'O resultado da adição é {adicao:.2f}')
+    print(f'O resultado da adição é {calculo_adicao:.2f}')
 
-elif multiplicador == '-':
-    subtracao = float_numero_1 - float_numero_2
-    print(f'O resultado da subtração é {subtracao:.2f}')
+if multiplicador == '-':
+    print(f'O resultado da subtração é {calculo_subtracao:.2f}')
 
-elif multiplicador == 'x':
-    multiplicacao = float_numero_1 * float_numero_2
-    print(f'O resultado da multiplicação é {multiplicacao:.2f}')
+if multiplicador == 'x':
+    print(f'O resultado da multiplicação é {calculo_multiplicacao:.2f}')
 
-elif multiplicador == '/':
-    divisao = float_numero_1 / float_numero_2
-    print(f'O resuldado da divisão é {divisao:.2f}')
+if multiplicador == '/':
+    print(f'O resuldado da divisão é {calculo_divisao:.2f}')
 
 else:
     print('Você precisa digitar algum multiplicador "+", "-", "x" ou "/" para funcionar')
